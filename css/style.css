@@ -1,0 +1,320 @@
+
+
+/*!---------RESET-----------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*!---------HEADER-----------*/
+
+header{
+  background-color: khaki;
+  position: sticky;
+  top: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  z-index: 1;
+}
+
+
+header h1{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    color: white;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    margin: 5px 10px 5px 10px;
+}
+
+header nav ul li a {
+   text-decoration: none;
+   color: black;
+}
+
+header nav ul li a:hover{
+    color: brown;
+}
+
+/*!---------MAIN-----------*/
+ .conrad{
+    width: 100%;
+    height: 70vh;
+    color: white;
+    text-align: center;
+    background-image: url("../img/cafebook.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .conrad h3{
+    font-size: 60px;
+    border: solid 6px white;
+    padding: 8px;
+ }
+
+
+ .conrad p{
+    font-size: 20px;
+    margin-bottom: 40px;
+ }
+
+
+.conrad a{
+    text-decoration: none;
+    color: white;
+    background-color: brown;
+    padding: 10px;
+    font-size: 20px;
+    border: 3px solid khaki;
+    border-radius: 10px;
+}
+
+.conrad a:hover{
+    background-color: brown;
+    color: beige;
+}
+
+
+.belly{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.belly div{
+    width: 55%;
+    margin: 45px;
+    text-align: center;
+}
+
+
+.belly img{
+    width: 500px;
+    height: 550px;
+}
+
+
+.belly div h2{
+    font-size: 30px;
+}
+
+.belly div p{
+    font-size: 20px;
+}
+
+.steven {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.jeremiah h2{
+   text-align: center;
+   padding: 10px;
+   font-size: 30px;
+   color: white;
+   background-color: khaki;
+}
+
+.steven div img{
+    width: 200px;
+    height: 200px;
+   text-align: center;
+}
+
+.steven div img{
+  width: 180px;
+  height: 210px;
+ border: 3px solid black;
+ text-align: center;
+ margin: 10px;
+ box-shadow: 10px 10px 48px -15px rgba(0,0,0,0.78);
+  -webkit-box-shadow: 10px 10px 48px -15px rgba(0,0,0,0.78);
+  -moz-box-shadow: 10px 10px 48px -15px rgba(0,0,0,0.78);
+}
+
+.steven div h3{
+  margin: 8px;
+  text-align: center;
+}
+
+.steven div a{
+    text-decoration: none;
+    color: white;
+    background-color: brown;
+    padding: 2px;
+    border: 3px solid khaki;
+    border-radius: 2px;
+    margin: 56px;
+    text-align: center;
+}
+
+.steven div a:hover{
+    background-color: brown;
+    color: beige;
+}
+
+  .grid-messi{
+    width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+     grid-auto-rows: 250px;
+     gap: 15px;
+  }
+
+  .grid-messi div img {
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+   box-shadow: 10px 10px 48px -15px rgba(0,0,0,0.78);
+    -webkit-box-shadow: 10px 10px 48px -15px rgba(0,0,0,0.78);
+    -moz-box-shadow: 10px 10px 48px -15px rgba(0,0,0,0.78);
+
+}
+
+
+ .grid-galeria.img-3{
+    grid-column: span 3;
+    grid-column-start: ;
+    grid-column-end: ;
+}
+
+
+.grid-galeria{
+    position: relative;
+}
+  
+.grid-galeria h3{
+    position: absolute;
+    bottom: 0;
+    color: antiquewhite;
+    background-color: rgba(165, 42, 42, 0.203);
+    width: 100%;
+    padding: 5px; 
+}
+
+
+.conrad{
+    font-size: 'Roboto Condensed', sans-serif;
+}
+
+.pegajoso{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+
+/*!---------FOOTER-----------*/
+
+footer {
+    background-color: khaki;
+    color: white;
+}
+
+footer h3{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width:960px){
+      .belly{
+        flex-direction: column;
+      }
+      .belly div{
+        width: 80%;
+        text-align: center;
+      }
+      .belly img{
+        height: 400px;
+      }
+}
+
+@media screen and (max-width:900px){
+    .grid-galeria{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 220px;
+    }
+    .grid-galeria{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+@media screen and  (max-width:850px){
+    .conrad h3{
+        font-size: 30px;
+    }
+    .conrad p{
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:800px ){
+    .pegajoso{
+        display: none;
+    }
+}
+    
+@media screen and (max-width:487px){
+    header{
+        position: static;
+
+    }
+     header nav ul{
+        flex-direction: column;
+        align-items: center;
+     }
+     header nav ul li{
+        margin: 0;
+     }
+     .conrad h3{
+        font-size: 30px;
+     }
+     .conrad p{
+        font-size: 15px;
+     }
+     .conrad a{
+        font-size: 15px;
+     }
+}
+
+
+@media screen and (max-width: 450px){
+    .grid-messi{
+        grid-template-columns: 1fr;
+    }
+    .grid-galeria{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .belly img{
+        width: 100%;
+    }
+}
